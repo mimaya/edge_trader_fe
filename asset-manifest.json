@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/edge_trader_fe/static/css/main.073c9b0a.css",
+    "main.js": "/edge_trader_fe/static/js/main.62050277.js",
+    "static/js/787.dbd59840.chunk.js": "/edge_trader_fe/static/js/787.dbd59840.chunk.js",
+    "static/media/logo.svg": "/edge_trader_fe/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/edge_trader_fe/index.html",
+    "main.073c9b0a.css.map": "/edge_trader_fe/static/css/main.073c9b0a.css.map",
+    "main.62050277.js.map": "/edge_trader_fe/static/js/main.62050277.js.map",
+    "787.dbd59840.chunk.js.map": "/edge_trader_fe/static/js/787.dbd59840.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.62050277.js"
+  ]
+}
