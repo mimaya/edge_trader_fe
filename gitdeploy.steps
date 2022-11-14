@@ -1,0 +1,46 @@
+1. create projectr
+npx create-react-app edge_trader_fe
+
+2. cd edge_trader_fe
+
+3. install gh-pages
+
+npm install gh-pages --save-dev
+
+4. add home page , predeploy, deploye commands as below
+
+vi package.json
+{
+  "name": "edge_trader_fe",
+  "version": "0.1.0",
++ "homepage": "https://mimaya.github.io/edge_trader_fe",
+  "private": true,
+
+
+"scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+	
+5. create new repository edge_trader_fe
+
+6. git remote add origin https://github.com/{username}/{repo-name}.git
+
+7. npm run deploy
+
+
+    That will cause the predeploy and deploy scripts defined in package.json to run.
+
+    Under the hood, the predeploy script will build a distributable version of the React app and store it in a folder named build. Then, the deploy script will push the contents of that folder to a new commit on the gh-pages branch of the GitHub repository, creating that branch if it doesn't already exist.
+
+
+8.  (Optional) Store the React app's source code on GitHub
+
+	In the previous step, the gh-pages npm package pushed the distributable version of the React app to a branch named gh-pages in the GitHub repository. However, the source code of the React app is not yet stored on GitHub.
+	
+	git add .
+	git commit -m "Configure React app for deployment to GitHub Pages"
+	git push origin master
+	
+9. access page : https://mimaya.github.io/edge_trader_fe	
